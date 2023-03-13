@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>the category is: {{jiandingRes}}</title>
+        <link rel="stylesheet" href="../static/rsc/css/jianding.css">
+    </head>
+    <body>
+        <div class="testNum">
+            <h2>
+                <b>
+                    Pearl Eye has already tested {{fileUploaded}} images.
+                </b>
+            </h2>
+        </div>
+        <div  class="content">
+            <div>
+                <img src="{{img}}" alt="jianding" width=50% height=50%>
+            </div>
+            <p>
+                the category is {{jiandingRes}}, with {{prob}}% of probability
+            </p>
+            <form action="/jianding" method="post">
+                <button type="submit">
+                    Categorize again
+                </button>
+            </form>
+        </div>
+        
+    </body>
+</html>
